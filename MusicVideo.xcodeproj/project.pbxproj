@@ -74,6 +74,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC48FDCB1D5F234200829D57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FC48FDCC1D5F236E00829D57 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC4CDD001D5E155A00C96F52 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		FC48FDCD1D5F238C00829D57 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC4CDD021D5E155A00C96F52 /* Main.storyboard */,
+				FC4CDD071D5E155A00C96F52 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FC48FDCE1D5F23C500829D57 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				FC4CDD051D5E155A00C96F52 /* Assets.xcassets */,
+				FC4CDCFE1D5E155A00C96F52 /* AppDelegate.swift */,
+				FC4CDD0A1D5E155A00C96F52 /* Info.plist */,
+			);
+			name = "Supporting files";
+			sourceTree = "<group>";
+		};
 		FC4CDCF21D5E155A00C96F52 = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +131,10 @@
 		FC4CDCFD1D5E155A00C96F52 /* MusicVideo */ = {
 			isa = PBXGroup;
 			children = (
-				FC4CDCFE1D5E155A00C96F52 /* AppDelegate.swift */,
-				FC4CDD001D5E155A00C96F52 /* ViewController.swift */,
-				FC4CDD021D5E155A00C96F52 /* Main.storyboard */,
-				FC4CDD051D5E155A00C96F52 /* Assets.xcassets */,
-				FC4CDD071D5E155A00C96F52 /* LaunchScreen.storyboard */,
-				FC4CDD0A1D5E155A00C96F52 /* Info.plist */,
+				FC48FDCE1D5F23C500829D57 /* Supporting files */,
+				FC48FDCB1D5F234200829D57 /* Model */,
+				FC48FDCC1D5F236E00829D57 /* Controller */,
+				FC48FDCD1D5F238C00829D57 /* View */,
 			);
 			path = MusicVideo;
 			sourceTree = "<group>";
@@ -193,6 +225,11 @@
 				TargetAttributes = {
 					FC4CDCFA1D5E155A00C96F52 = {
 						CreatedOnToolsVersion = 7.3.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					FC4CDD0E1D5E155A00C96F52 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -482,6 +519,7 @@
 				FC4CDD251D5E155B00C96F52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC4CDD261D5E155B00C96F52 /* Build configuration list for PBXNativeTarget "MusicVideoTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +528,7 @@
 				FC4CDD281D5E155B00C96F52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC4CDD291D5E155B00C96F52 /* Build configuration list for PBXNativeTarget "MusicVideoUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +537,7 @@
 				FC4CDD2B1D5E155B00C96F52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
